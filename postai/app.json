@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Postaí",
+    "slug": "postai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "postai",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#7C3AED"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O Postaí precisa acessar suas fotos para organizar seu feed."
+        }
+      ],
+      "expo-font"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.postai.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#7C3AED"
+      },
+      "package": "com.postai.app",
+      "edgeToEdgeEnabled": false,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
